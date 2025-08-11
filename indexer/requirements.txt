@@ -9,4 +9,6 @@ beautifulsoup4==4.12.3
 pypdf==4.2.0
 python-docx==1.1.0
 markdown==3.6
-tqdm
+tqdm==4.66.4
+tenacity==8.3.0
+pytest==8.2.2

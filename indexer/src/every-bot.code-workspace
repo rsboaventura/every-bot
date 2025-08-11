@@ -7,5 +7,7 @@
 			"path": "../../../../MAIN/3dprint-bot.nosync "
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "every-bot"
+	}
 }
