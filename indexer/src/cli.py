@@ -22,4 +22,19 @@ def main():
 	if not args.no_crawl:
 		logger.info('Iniciando crawl...')
 		site_docs = crawl()
-		logger.info(f'Crawl coletou {len
+		logger.info(f'Crawl coletou {len(site_docs)} docs')
+		if args.export_crawl and site_docs:
+			export_docs(site_docs)
+	local_docs: List[Dict[str, Any]] = []
+	if not args.no_docs:
+		logger.info('Ingerindo docs locais...')
+		local_docs = ingest_local()
+		logger.info(f'Docs locais: {len(local_docs)}')
+	all_docs: List[Dict[str, Any]] = site_docs + local_docs
+	if not all_docs:
+		logger.error('Nenhum documento encontrado.')
+		sys.exit(1)
+	build(all_docs, args.mode)
+
+if __name__ == '__main__':
+	main()
