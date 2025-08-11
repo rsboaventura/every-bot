@@ -16,7 +16,7 @@ __pycache__/
 # Generated vector DB / indexes
 database/*
 !database/.gitkeep
-input/*
+input/
 !input/.gitkeep
 
 # Build / runtime output (not checked in)
