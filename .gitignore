@@ -1,0 +1,29 @@
+node_modules
+.next
+dist
+
+# Environment files (root and per service)
+.env
+.env.*
+*/.env
+*/.env.*
+
+# Python cache / test artifacts
+__pycache__/
+*.pyc
+.pytest_cache
+
+# Generated vector DB / indexes
+database/*
+!database/.gitkeep
+input/*
+!input/.gitkeep
+
+# Build / runtime output (not checked in)
+out/
+
+*.DS_Store
+
+# Keys / certs
+*.key
+*.pem

@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"allowJs": false,
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"jsx": "preserve",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"types": ["node", "react"]
+	},
+	"include": ["next-env.d.ts", "src/**/*.{ts,tsx}"],
+	"exclude": ["node_modules"]
+}
+
